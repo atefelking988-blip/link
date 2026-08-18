@@ -1,0 +1,149 @@
+/* --- إعدادات عامة --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif; /* يفضل استخدام خط عربي أنيق، تأكد من استدعائه إذا رغبت */
+    background-color: #f4f7f6; /* لون خلفية مريح للعين */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* --- تنسيق الهيدر --- */
+.header h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* --- تنسيق الحاوية الرئيسية والبطاقة --- */
+.container {
+    width: 100%;
+    max-width: 500px; /* أقصى عرض للبطاقة */
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 15px; /* حواف ناعمة */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* ظل خفيف خلف البطاقة */
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #eaeaea;
+}
+
+/* عناوين البطاقة */
+.card .title {
+    font-size: 1.6rem;
+    color: #c0392b; /* لون مميز لاسم المستشار */
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* مسافة بين الأيقونة والنص */
+}
+
+.card .title i {
+    color: #e74c3c; /* لون أيقونة الميزان */
+}
+
+.card .subtitle {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.card .contact-title {
+    font-size: 1rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 10px;
+}
+
+/* --- تنسيق قسم الهواتف --- */
+.phones {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.phone-item {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: color 0.3s ease;
+}
+
+.phone-item i {
+    color: #27ae60; /* لون أيقونة الهاتف الأخضر */
+}
+
+.phone-item:hover {
+    color: #27ae60; /* يتغير لون الرقم عند التمرير */
+}
+
+/* --- تنسيق أزرار التواصل الاجتماعي --- */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* التنسيق العام للأزرار */
+.btn {
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 30px; /* أزرار بيضاوية */
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* مسافة بين الأيقونة والنص */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* تأثير عند تمرير الماوس */
+.btn:hover {
+    transform: translateY(-3px); /* ترتفع قليلاً */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* --- ألوان مخصصة لكل منصة --- */
+
+/* WhatsApp */
+.whatsapp {
+    background-color: #25D366; /* لون واتساب الرسمي */
+}
+
+/* Telegram */
+.telegram {
+    background-color: #0088cc; /* لون تليجرام الرسمي */
+}
+
+/* Instagram */
+.insta {
+    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D); /* تدرج إنستغرام الرسمي */
+}
+
+/* TikTok */
+.tiktok {
+    background-color: #000000; /* خلفية سوداء لتيك توك */
+    border: 1px solid #fff;
+}
